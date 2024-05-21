@@ -9,10 +9,13 @@ with open('config.json') as f:
 
 input_dir = config['INPUT_DIR']
 mask_dir = config['MASK_DIR']
-output_dir = config['OUTPUT_DIR']
+basic_sd_output_dir = config['BASIC_SD_OUTPUT_DIR']
+basic_sdxl_output_dir = config['BASIC_SDXL_OUTPUT_DIR']
+inpainting_output_dir = config['INPAINTING_OUTPUT_DIR']
 os.makedirs(input_dir, exist_ok=True)
 os.makedirs(mask_dir, exist_ok=True)
-os.makedirs(output_dir, exist_ok=True)
+os.makedirs(basic_sd_output_dir, exist_ok=True)
+os.makedirs(inpainting_output_dir, exist_ok=True)
 
 
 def save_generated_images(images, output_dir):

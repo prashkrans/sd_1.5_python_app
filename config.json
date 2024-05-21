@@ -1,5 +1,7 @@
 {
   "INPUT_DIR": "./resources/input_dir/",
   "MASK_DIR": "./resources/output_dir_sd_1.5/inpainting/masks/",
-  "OUTPUT_DIR": "./resources/output_dir_sd_1.5/inpainting/inpaint_output/"
+  "BASIC_SD_OUTPUT_DIR": "./resources/output_dir_sd_1.5/basic_sd/",
+  "BASIC_SDXL_OUTPUT_DIR": "./resources/output_dir_sdxl/basic_sd/",
+  "INPAINTING_OUTPUT_DIR": "./resources/output_dir_sd_1.5/inpainting/inpaint_output/"
 }
