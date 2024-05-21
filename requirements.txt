@@ -1,0 +1,9 @@
+opencv-python
+torch
+torchvision
+diffusers
+transformers 
+accelerate 
+safetensors
+xformers
+invisible_watermark

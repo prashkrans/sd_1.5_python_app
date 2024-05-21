@@ -1,0 +1,5 @@
+{
+  "INPUT_DIR": "./resources/input_dir/",
+  "MASK_DIR": "./resources/output_dir_sd_1.5/inpainting/masks/",
+  "OUTPUT_DIR": "./resources/output_dir_sd_1.5/inpainting/inpaint_output/"
+}
