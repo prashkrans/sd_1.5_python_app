@@ -1,11 +1,12 @@
+from datetime import datetime
+
 import cv2
 import torch
 from PIL import Image
-from datetime import datetime
 from diffusers import StableDiffusionInpaintPipeline, AutoencoderKL, DDIMScheduler
 
 from descale_image import descale_image
-from utils import input_dir, mask_dir, show_images_as_grid
+from utils import mask_dir, show_images_as_grid
 
 
 #  The area to inpaint is represented by white pixels and the area to keep is represented by black pixels. The white
@@ -57,7 +58,7 @@ def inpaint(init_images, mask_images, img_names_with_ext, output_dir):
         # Once downloaded could be used by any file in from any directory (no need to download each time)
         inpainting_base_model_path = 'https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE/blob/main/Realistic_Vision_V5.1-inpainting.safetensors'
         # or,
-        # inpainting_base_model_path = ('/home/nashprat/workspace/comfy_ui_tools/ComfyUI/models/checkpoints/epicrealism_pureEvolutionV5-inpainting.safetensors')
+        # inpainting_base_model_path = ('/ComfyUI/models/checkpoints/epicrealism_pureEvolutionV5-inpainting.safetensors')
         vae_model_path = "stabilityai/sd-vae-ft-mse"
         device = ("cuda")
         vae = AutoencoderKL.from_pretrained(vae_model_path).to(dtype=torch.float16)
@@ -141,8 +142,8 @@ def inpaint(init_images, mask_images, img_names_with_ext, output_dir):
 
 
 from mask_generator import mask_generator
-from utils import input_dir, output_dir
+from utils import input_dir, inpainting_output_dir
 
 if __name__ == "__main__":
     init_images, mask_images, img_names_with_ext = mask_generator(input_dir)
-    inpaint(init_images, mask_images, img_names_with_ext, output_dir)
+    inpaint(init_images, mask_images, img_names_with_ext, inpainting_output_dir)
