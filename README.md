@@ -2,10 +2,10 @@
 Basic usage of stable diffusion 1.5 including `text to image generation` and `inpainting`.
 
 ### Demo Videos:
-SD 1.5 Text to Image Generation:
+SD 1.5 Text to Image Generation:  
 https://github.com/user-attachments/assets/35a89bf3-5548-48a2-84cf-17744c82c3cc
 
-SD 1.5 Inpainting:
+SD 1.5 Inpainting:  
 https://github.com/user-attachments/assets/d8b85348-e274-4c04-8cfe-3baf4c66ade2
 
 ### Prerequisites:
