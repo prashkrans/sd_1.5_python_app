@@ -1,34 +1,38 @@
-# sd_1.5_python_app
+# Stable Diffusion 1.5 Python App
+Basic usage of stable diffusion 1.5 including `text to image generation` and `inpainting`.
 
-Basic usage of stable diffusion 1.5 including text2img generation and inpainting
+### Demo Videos:
+SD 1.5 Text to Image Generation:
+https://github.com/user-attachments/assets/35a89bf3-5548-48a2-84cf-17744c82c3cc
+
+SD 1.5 Inpainting:
+https://github.com/user-attachments/assets/d8b85348-e274-4c04-8cfe-3baf4c66ade2
 
 ### Prerequisites:
-
 - Python 3.10 (Might work with other versions as well)
 - Nvidia drivers installed along with CUDA
 - Nvidia GPU with VRAM atleast 6GB
-- CPU can also be used but is painfully slow
-- Developed in Ubuntu 24.04 so linux based on debian is preferred
+- CPU can also be used but is awfully slow
 
 ### Setup:
-
 1. Clone the repo and move to the root dir.
 2. Create a python virtual environment.
-3. Install the requirements (Might take some time).
+3. Install torch separately, then install the requirements (Might take some time).
+```commandline
+pip install torch==2.3.0
+pip install -r requirements.txt
+```
 4. Either download sd 1.5 models manually or use hugging face models auto-download option.
 
 ### Usage:
-
-- Run either of the _1_ or _2_ for text2img generation.
-- Run _3_ for inpainting.
+- Run either of the _1_ or _2_ for text to image generation, give a prompt and wait for the image generation. 
+- Run _3_ for inpainting, mask the source image (./input_dir/source_image.jpg), give appropriate prompt and watch the magic happen.
 
 ### License
-
-This python app and stable diffusion code and model weights are released under the MIT License. See [LICENSE](LICENSE)
+This python app, stable diffusion code and model weights are released under the MIT License. See [LICENSE](LICENSE)
 for further details.
 
 ### Responsible usage of Stable Diffusion
-
 By forking or cloning this repository, you agree to adhere to responsible usage guidelines. This ensures that the
 powerful capabilities of Stable Diffusion are used ethically and do not cause harm. Below are the key principles and
 practices to follow:

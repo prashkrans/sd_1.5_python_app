@@ -1,6 +1,4 @@
 opencv-python
-torch
-torchvision
 diffusers
 transformers 
 accelerate 

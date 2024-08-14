@@ -40,7 +40,12 @@ pipe.enable_model_cpu_offload()
 # if using torch < 2.0 use `pipe.enable_xformers_memory_efficient_attention()`
 pipe.enable_xformers_memory_efficient_attention()
 
-prompt = "a cat with its two kittens"
+prompt = input("Please input the prompt for image generation: ")
+
+if len(prompt) == 0:
+    prompt = "A cat with its two kittens"
+
+print(f'Prompt: {prompt}')
 negative_prompt = "text, watermark, deformed, bad quality, nsfw"
 
 batch_size = 4
