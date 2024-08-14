@@ -2,11 +2,12 @@
 Basic usage of stable diffusion 1.5 including `text to image generation` and `inpainting`.
 
 ### Demo Videos:
-SD 1.5 Text to Image Generation:  
-https://github.com/user-attachments/assets/35a89bf3-5548-48a2-84cf-17744c82c3cc
+SD 1.5 Text to Image Generation Demo:  
+https://github.com/user-attachments/assets/0d9afd14-9476-4658-a798-53369cba312e
 
-SD 1.5 Inpainting:  
-https://github.com/user-attachments/assets/d8b85348-e274-4c04-8cfe-3baf4c66ade2
+SD 1.5 Inpainting Demo:  
+https://github.com/user-attachments/assets/521a6a2d-7f13-4203-82b0-2487ba495c13
+
 
 ### Prerequisites:
 - Python 3.10 (Might work with other versions as well)
